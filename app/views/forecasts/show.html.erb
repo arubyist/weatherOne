@@ -1,0 +1,9 @@
+The dewpoint is <%= @current_weather.dewPoint %>
+
+<br /><br />
+
+<% @daily_weather.each do |day| %>        
+  <h2><%= Time.at(day.time).strftime('%A') %>: <%= day.summary %></h2>
+
+    <p>High: <%= day.apparentTemperatureMax %> | Low: <%= day.apparentTemperatureMin %></p>
+<% end %>
