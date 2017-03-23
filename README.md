@@ -12,7 +12,7 @@ For now, it provides basic weather, and could provide additional information dow
 
 Screenshot of the homepage: 
 
-![homepage](http://i64.tinypic.com/20hvtd1.png)
+![homepage](http://i67.tinypic.com/14tskjm.png)
 
 Screenshot of the inside page:
 
@@ -20,4 +20,4 @@ Screenshot of the inside page:
 
 Feel free to clone it for fun and/or educational purposes. 
 
-
+######H6 Images used on homepage come from unsplash.com
