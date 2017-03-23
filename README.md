@@ -8,7 +8,15 @@ Rails low-level caching has been implemented with 12-hours expiration set. What 
 
 It also uses figaro's gem to keep the API's key under wraps.
 
-For now, it provides basic weather, and could provide additional information down the road.
+For now, it provides basic weather, and could provide additional information down the road. Inside pages needs to be tweaked a lot more as well. 
+
+Screenshot of the homepage: 
+
+![homepage](http://i64.tinypic.com/20hvtd1.png)
+
+Screenshot of the inside page:
+
+![insidepage](http://i63.tinypic.com/v3qae9.png)
 
 Feel free to clone it for fun and/or educational purposes. 
 
