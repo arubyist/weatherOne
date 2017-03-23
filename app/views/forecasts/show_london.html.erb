@@ -1,0 +1,8 @@
+
+<br /><br />
+<h1>London's Weather</h1>
+<% @daily_weather.each do |day| %>        
+  <h2><%= Time.at(day.time).strftime('%A') %>: <%= day.summary %></h2>
+
+    <p>High: <%= day.apparentTemperatureMax %> | Low: <%= day.apparentTemperatureMin %></p>
+<% end %>
