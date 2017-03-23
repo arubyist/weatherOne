@@ -1,24 +1,15 @@
-# README
+# Mini-Weather Site 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It covers 4 major cities: Paris, Venice, Los Angeles, & London
 
-Things you may want to cover:
+Site uses the information provided by Dark Sky's API. 
 
-* Ruby version
+Rails low-level caching has been implemented with 12-hours expiration set. What this means is that information will be provided continuously within the span of 12-hours until it's refreshed, i.e., it won't count as a hit by Dark Sky's API - a win! 
 
-* System dependencies
+It also uses figaro's gem to keep the API's key under wraps.
 
-* Configuration
+For now, it provides basic weather, and could provide additional information down the road.
 
-* Database creation
+Feel free to clone it for fun and/or educational purposes. 
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
