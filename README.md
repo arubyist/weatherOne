@@ -20,6 +20,6 @@ Screenshot of the inside page:
 
 Feel free to clone it for fun and/or educational purposes. 
 
-###### H6 [Images used on homepage come from unsplash](http://unsplash.com/)
+###### [Images used on homepage come from unsplash](http://unsplash.com/)
 
-###### H6 [CSS comes from bulma](http://bulma.io/)
+###### [CSS comes from bulma](http://bulma.io/)
