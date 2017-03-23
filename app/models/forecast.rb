@@ -19,5 +19,10 @@ class Forecast < ApplicationRecord
     end
   end
 
+  def get_weather_data_venice
+    Rails.cache.fetch("https://api.darksky.net/forecast/#{ForecastIO.api_key}/45.4408,12.3155", :expires => 12.hour) do
+     ForecastIO.forecast(45.4408, 12.3155) 
+    end
+  end
 
 end

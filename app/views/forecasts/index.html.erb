@@ -1,13 +1,8 @@
 
-
-<h1><%= link_to 'Paris', paris_path %></h1>
-
-<h1><%= link_to 'London', london_path %></h1>
-
-<h1><%= link_to 'Los Angeles', losangeles_path %></h1>
-
 <div class="container">
-  <div class="column is-11">
+  <h1 class="title is-1 has-text-centered">Current Weather of Major Cities</h1>
+
+  <div class="column is-12">
 
 
 <div class="tile is-ancestor">
@@ -15,47 +10,41 @@
     <div class="tile">
       <div class="tile is-parent is-vertical">
         <article class="tile is-child notification is-primary">
-          <p class="title"><%= link_to 'Paris', paris_path %></p>
-          <p class="subtitle">Top tile</p>
+          <p class="title"><%= link_to 'Paris', paris_path, :target => 'blank' %></p>
+          
           
         </article>
         <article class="tile is-child notification is-warning">
-          <p class="title">...tiles</p>
-          <p class="subtitle">Bottom tile</p>
+          <p class="title"><%= link_to 'Venice', venice_path, :target => 'blank' %></p>
         </article>
       </div>
       <div class="tile is-parent">
         <article class="tile is-child notification is-info">
-          <p class="title">Middle tile</p>
-          <p class="subtitle">With an image</p>
+          <p class="title"><%= link_to 'Los Angeles', losangeles_path, :target => 'blank' %></p>
           <figure class="image is-4by3">
-            <img src="http://bulma.io/images/placeholders/640x480.png">
           </figure>
         </article>
       </div>
-    </div>
-    <div class="tile is-parent">
-      <article class="tile is-child notification is-danger">
-        <p class="title">Wide tile</p>
-        <p class="subtitle">Aligned with the right tile</p>
-        <div class="content">
-          <!-- Content -->
-        </div>
-      </article>
     </div>
   </div>
   <div class="tile is-parent">
     <article class="tile is-child notification is-success">
       <div class="content">
-        <p class="title">Tall tile</p>
-        <p class="subtitle">With even more content</p>
-        <div class="content">
-          <!-- Content -->
-        </div>
+        <p class="title"><%= link_to 'London', london_path, :target => 'blank' %></p>
       </div>
     </article>
   </div>
 </div>
 
 </div>
+
+<div class="column is-12">
+<a href="https://darksky.net/poweredby/" target="_blank" class="button is-medium is-fullwidth">
+Powered by Dark Sky
+</a>
 </div>
+
+</div>
+
+
+

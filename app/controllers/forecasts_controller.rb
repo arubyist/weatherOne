@@ -7,11 +7,6 @@ class ForecastsController < ApplicationController
     @forecasts = Forecast.all
   end
 
-def show     
-  @weather = @forecast.get_weather_data_paris     
-  @current_weather = @weather.currently  
-  @daily_weather = @weather.daily.data.first(5)
-end
 
 def show_paris 
    @forecast = Forecast.find(params[:id])
@@ -33,6 +28,22 @@ def show_losangeles
    @forecast = Forecast.find(params[:id])
    
   @weather = @forecast.get_weather_data_losangeles    
+  @current_weather = @weather.currently  
+  @daily_weather = @weather.daily.data.first(5)
+end
+
+def show_venice
+   @forecast = Forecast.find(params[:id])
+   
+  @weather = @forecast.get_weather_data_venice   
+  @current_weather = @weather.currently  
+  @daily_weather = @weather.daily.data.first(5)
+end
+
+def show_barcelona
+   @forecast = Forecast.find(params[:id])
+   
+  @weather = @forecast.get_weather_data_barcelona
   @current_weather = @weather.currently  
   @daily_weather = @weather.daily.data.first(5)
 end

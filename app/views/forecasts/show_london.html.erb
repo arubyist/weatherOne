@@ -1,10 +1,30 @@
+  <div class="container">
+	<h1 class="title is-1 has-text-centered">London</h1>
+	<div class="column is-12">
 
-<br /><br />
-<h1>London's Weather</h1>
-<% @daily_weather.each do |day| %>        
-  <h2><%= Time.at(day.time).strftime('%A') %>: <%= day.summary %></h2>
-
-    <p>High: <%= day.apparentTemperatureMax %> | Low: <%= day.apparentTemperatureMin %></p>
-<% end %>
-
-<p><a href="https://darksky.net/poweredby/" target="blank">Powered by Dark Sky</a></p>
+<div class="tile is-ancestor">
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title">Additional Information</p>
+      <p class="subtitle">Bestest City Ever!</p>
+      <div class="content">
+        <p>Add information unique to this city.</p>
+      </div>
+    </article>
+  </div>
+  <div class="tile is-parent is-8">
+    <article class="tile is-child box">
+      <div class="content">
+        <p class="title">5-Day Summary</p>
+      <% @daily_weather.each do |day| %>        
+      <h2><b><%= Time.at(day.time).strftime('%A') %></b>: <%= day.summary %></h2>
+			<p>High: <%= day.apparentTemperatureMax %> | Low: <%= day.apparentTemperatureMin %></p>
+			<p>Wind Speed: <%= day.windSpeed %></p>
+			<br />
+    	<% end %>
+      </div>
+    </article>
+  </div>
+</div>
+</div>
+</div>
