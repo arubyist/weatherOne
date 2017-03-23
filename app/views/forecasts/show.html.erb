@@ -1,7 +1,7 @@
 The dewpoint is <%= @current_weather.dewPoint %>
 
 <br /><br />
-
+<h1>Paris' Weather</h1>
 <% @daily_weather.each do |day| %>        
   <h2><%= Time.at(day.time).strftime('%A') %>: <%= day.summary %></h2>
 

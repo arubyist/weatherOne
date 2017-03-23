@@ -8,10 +8,17 @@ class ForecastsController < ApplicationController
   end
 
 def show       
-  @weather = @forecast.get_weather_data       
+  @weather = @forecast.get_weather_data_paris     
   @current_weather = @weather.currently  
   @daily_weather = @weather.daily.data.first(5)
 end
+
+def show_paris 
+  @weather = @forecast.get_weather_data_paris     
+  @current_weather = @weather.currently  
+  @daily_weather = @weather.daily.data.first(5)
+end
+
 
   # GET /forecasts/new
   def new

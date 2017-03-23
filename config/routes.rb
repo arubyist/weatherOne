@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   resources :forecasts
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  #root to: 'forecasts#new'
+ 	root to: 'paris', to: "forecasts#show_paris"
 end
